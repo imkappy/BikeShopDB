@@ -1,4 +1,4 @@
-## 🛠️ Bike Shop Relational Database (SQL)
+## 🛠️ Bike Shop Relational Database (Microsoft Access & SQL)
 
 This SQL project demonstrates the ability to build and query a normalized relational database for a fictional bike shop. It includes practical business scenarios and showcases advanced querying techniques.
 
