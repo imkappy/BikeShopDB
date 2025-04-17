@@ -26,4 +26,12 @@ This SQL project demonstrates the ability to build and query a normalized relati
 - Relational Schema Design
 - ERD principles
 
+### Relational Database
+This ERD visualizes the relational schema of the Bike Shop database.
+Key relationships demonstrates:
+**Customer orders and transactions** tied to employees and bicycles
+**Bicycles** composed of various parts, sizes, and paint options
+**Component tracking** through purchase orders, inventory, and usage
+**Manufactuer** and **Store Locations** mapped by city and state
+Full normalization to reduce redundancy and enforce data integrity
 ![Relational Database](Bike_ERD.png)
