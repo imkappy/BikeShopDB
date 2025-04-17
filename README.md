@@ -21,6 +21,9 @@ This SQL project demonstrates the ability to build and query a normalized relati
 
 ### 📄 Technologies
 
-- SQL Server (T-SQL)
+- Microsoft Access
+- SQL Server
 - Relational Schema Design
 - ERD principles
+
+![Relational Database](Bike_ERD.png)
