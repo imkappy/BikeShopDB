@@ -35,3 +35,23 @@ This ERD visualizes the relational schema of the Bike Shop database.
   - **Manufactuer** and **Store Locations** mapped by city and state
   - Full normalization to reduce redundancy and enforce data integrity
 ![Relational Database](Bike_ERD.png)
+
+###SQL Snippet Overview
+```sql
+--28. In which years did the average build time for the year exceed the overall average build time for all years? 
+--The build time is the difference between order date and ship date.
+--Use the difference between OrderDate and ShipDate.
+--Year	BuildTime
+
+SELECT --select all columns that need listed 
+    YEAR(B.OrderDate) AS Year, --use YEAR() to only grab the year and not month or day
+    AVG(DATEDIFF(B.ShipDate, B.OrderDate)) AS BuildTime --calculates the difference between 2 dates then the average
+FROM
+    Bicycle AS B --main table for query
+GROUP BY
+    YEAR(B.OrderDate) --groups by OrderDate so the average build time is calculated seperately for each year
+HAVING --filters results to only include where the build time for that year is greater than the average build for all years
+    AVG(DATEDIFF(B.ShipDate, B.OrderDate)) > (
+        SELECT AVG(DATEDIFF(ShipDate, OrderDate))
+        FROM Bicycle);
+
