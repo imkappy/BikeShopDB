@@ -36,7 +36,7 @@ This ERD visualizes the relational schema of the Bike Shop database.
   - Full normalization to reduce redundancy and enforce data integrity
 ![Relational Database](Bike_ERD.png)
 
-###SQL Snippet Overview
+### SQL Snippet Overview
 ```sql
 --28. In which years did the average build time for the year exceed the overall average build time for all years? 
 --The build time is the difference between order date and ship date.
